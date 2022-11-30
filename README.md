@@ -1,6 +1,6 @@
 # swiftcode
 variables 
-//var l : Int = 10
+'''var l : Int = 10'''
 
 //print(l)
 //l = 20
