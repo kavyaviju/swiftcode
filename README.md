@@ -1,33 +1,32 @@
 # swiftcode
-//variables 
-var l : Int = 10
+variables 
+//var l : Int = 10
 
-print(l)
-l = 20
-var a = 10 
-a = 20
-print(a)
+//print(l)
+//l = 20
+//var a = 10 
+//a = 20
+//print(a)
+constants 
+let is the keyword for constants 
+//let b = 10
+//print(b)
+    let is a constant cant change the keyword
+//var c = 10.00
+//print(c)
+//var d : Float = 10.97393729
+//print(d)
 
-    //constants 
-    //let is the keyword for constants 
-let b = 10
-print(b)
-    //let is a constant cant change the keyword
-var c = 10.00
-print(c)
-var d : Float = 10.97393729
-print(d)
-
-var e : String = "this is how strings work"
-print(e)
-    //this covers how variables work in swift
-    //this also covers strings and integers in swift 
-    //multi line strings in swift
-var f = """
-    this is how
-    multi line Strings work
-    in swift
-    """
+//var e : String = "this is how strings work"
+//print(e)
+    this covers how variables work in swift
+    this also covers strings and integers in swift 
+    multi line strings in swift
+//var f = """
+    //this is how
+   // multi line Strings work
+    //in swift
+    //"""
 print(f)
     //to print multi line stirngs with out any break
 var g = """
