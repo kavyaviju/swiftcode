@@ -243,6 +243,115 @@ case .gif:
 default:
     description += " an image."
 }
-
 print(description) // The image type gif is animatable, and also an image.
 ```
+
+
+//structures 
+```
+struct members {
+    var hhu : [String]
+    var pu : [String]
+    var vu : [String]
+}
+let one = members(hhu: ["scoups","wonwoo","vernon","mingyu"], pu: ["hoshi","dino","jun","the8"], vu: ["joshua","jeonghan","woozi","dk","seungkwan"])
+for i in 0...3 {
+    print(one.pu[i])
+}
+```
+
+```
+struct mems {
+    var membernames : String
+    }
+
+let pu = mems(membernames: "hoshi")
+print("\(pu.membernames) is the performance unit leader")
+var rem = mems(membernames: "dino")
+rem = mems(membernames: "the8")
+rem = mems(membernames: "jun")
+print("\(rem.membernames) is the pu member")
+```
+
+
+//computed properties and stored properties 
+
+```
+struct hhu {
+    var membs : String
+    var mempresent : Bool
+    //computed property
+    var present : String {
+        if mempresent {
+            return "\(membs) is present in hhu"
+        }
+        else {
+            return "\(membs) is not present in hhu "
+        }
+    }
+    
+}
+var abc = hhu(membs: "dino", mempresent: false)
+abc = hhu(membs: "wonwoo", mempresent: true)
+print(abc.present)
+```
+
+
+    //stored property
+//Another method to have stored property is to have as constant structures. So the whole instance of the structures will be considered as 'Stored Properties of Constants'.
+
+```
+struct number {
+    var no : Int 
+    let pi : Float
+}
+var bts = number(no : 1234, pi: 3.14)
+bts = number(no: 2345, pi: 9.8)
+print(bts.no)
+print(bts.pi)
+```
+
+
+
+
+
+
+
+  //mutating methods 
+    //mutating is used 
+    
+    ```
+struct Person {
+    var name: String
+    
+    mutating func makeAnonymous() {
+        name = "Anonymous"
+        print(name)
+    }
+}
+var choice = Person(name : "Anonymous")
+print(choice.makeAnonymous())
+```
+
+    //computed properties with property observers
+    ```
+class Samplepgm {
+    var counter: Int = 0 {
+        willSet(newTotal){
+            print("Total Counter is: \(newTotal)")
+        }
+        
+        didSet {
+            if counter > oldValue {
+                print("Newly Added Counter \(counter - oldValue)")
+            }
+        }
+    }
+}
+
+let NewCounter = Samplepgm()
+NewCounter.counter = 100
+NewCounter.counter = 800
+```
+
+
