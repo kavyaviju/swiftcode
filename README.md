@@ -1,5 +1,6 @@
 # swiftcode
-variables 
+variables
+
 ```
 var l : Int = 10
 print(l)
@@ -8,8 +9,10 @@ var a = 10
 a = 20
 print(a)
 ```
+
 constants 
 let is the keyword for constants 
+
 ```
 let b = 10
 print(b)
@@ -27,8 +30,9 @@ print(e)
 ```
 this covers how variables work in swift
 
-    this also covers strings and integers in swift 
+this also covers strings and integers in swift 
     multi line strings in swift
+    
 ```
 var f = """
     this is how
@@ -37,7 +41,7 @@ var f = """
     """
 print(f)
 ```
-    to print multi line stirngs with out any break
+to print multi line stirngs with out any break
     ```
 var g = """
     this is how \
@@ -46,17 +50,22 @@ var g = """
     """
 print(g)
 ```
-    //booleans
-    ```
-var h : Bool = false
-print(h)
 ```
-    //string interpolation 
+booleans
+
     ```
-var i = 10
-print("the value of the variable i is \(i)")
+    var h : Bool = false
+    print(h)
+     ```
+     
+string interpolation
+
+    ```
+      var i = 10
+      print("the value of the variable i is \(i)")
 ```
-    string interpolation can be used to even write code inside strings
+```
+string interpolation can be used to even write code inside strings
     constants is also covered
     type annontations
     type inference: Swift is able to infer the type of something based on how you created it.
@@ -66,7 +75,7 @@ var str : String = "this is assigning the variable str to String type "
 var j : Int = 10
 ```
 
-
+```
 complex data types 
 arrays 
 ```
@@ -78,18 +87,19 @@ let ringo = "Ringo Starr"
 let beatles = [john, paul, george, ringo]
 print(beatles[0])
 ```
-    //type annontations for arrays 
+
+type annontations for arrays 
     ```
 var arr : [Int] 
 arr = [0,1,2,3,99,5,6]
 print(arr[4])
 ```
-```
+
 var arr1 : [String]
 arr1 = ["scoups","vernon","wonwoo","mingyu"]
 print(arr1[1])
 ```
-    sets
+ sets
     sets use the keyword set 
     data isnt stored in a particularnorder in a set
     all the items in a set are unique
@@ -100,14 +110,16 @@ print(colors)
 let colors2 : Set<Int> = Set([1,2,3,4,5,6,7,7,7,8,9])
 print(colors2)
 ```
-    tuples
+```
+tuples
     tuples cant be altered 
     fixed in size
     ```
 let tup = (first : "jeon" , last : "wonwoo")
 print(tup.last)
 ```
-    //dictionaries 
+```
+dictionaries 
     ```
 let vocal = [
     "main1" : "seungkwan",
@@ -118,7 +130,8 @@ let vocal = [
 ]
 print(vocal["main1"]!)
 ```
-    //dictionaries with type annontations 
+```
+dictionaries with type annontations 
     ```
 let perf : [String : String] = [
     "main1" : "hoshi",
@@ -127,26 +140,28 @@ let perf : [String : String] = [
     "lead2" : "jun"]
 print(perf["main2", default : "dino"])
 ```
-    //dictionary default values
+```
+dictionary default values
     ```
 print(perf["main",default : "dino"])
 ```
-    //creating empty collections 
-    //empty dictionary
+```
+creating empty collections 
+ empty dictionary
 ```
 var teams = [String: String]()
 ```
-//empty array
+empty array
 ```
 var results = [Int]()
 ```
-//empty sets
+empty sets
 ```
 var words = Set<String>()
 var numbers = Set([1,2,3])
 ```
-//enumerations
-//enumerations uses the enum keyword
+enumerations
+enumerations uses the enum keyword
 ```
 enum kpop  {
     case bg
@@ -183,8 +198,8 @@ for grp in kpop1.allCases {
     print(grp)
 }
 ```
-//enum associated values 
-//enum associated values is used to provide extra information about the enum cases.
+enum associated values 
+enum associated values is used to provide extra information about the enum cases.
 ```
 enum boygroup {
     case seventeen, ateez(fav : String), txt, straykids, p1harmony, theboyz, exo, bts, enha
@@ -247,7 +262,7 @@ print(description) // The image type gif is animatable, and also an image.
 ```
 
 
-//structures 
+structures 
 ```
 struct members {
     var hhu : [String]
@@ -297,8 +312,8 @@ print(abc.present)
 ```
 
 
-    //stored property
-//Another method to have stored property is to have as constant structures. So the whole instance of the structures will be considered as 'Stored Properties of Constants'.
+stored property
+Another method to have stored property is to have as constant structures. So the whole instance of the structures will be considered as 'Stored Properties of Constants'.
 
 ```
 struct number {
@@ -310,16 +325,9 @@ bts = number(no: 2345, pi: 9.8)
 print(bts.no)
 print(bts.pi)
 ```
-
-
-
-
-
-
-
-  //mutating methods 
-    //mutating is used 
-    
+mutating methods 
+mutating is used 
+    `
     ```
 struct Person {
     var name: String
@@ -332,8 +340,8 @@ struct Person {
 var choice = Person(name : "Anonymous")
 print(choice.makeAnonymous())
 ```
-
-    //computed properties with property observers
+```
+ computed properties with property observers
     ```
 class Samplepgm {
     var counter: Int = 0 {
